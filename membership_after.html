@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.png" />
+  <title>등록 완료</title>
+
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/sub.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+
+  <!-- script -->
+  <script defer src="./js/script.js"></script>
+</head>
+
+<form name="header">
+  <header>
+    <div class="header">
+      <div class="group-01">
+        <ul>
+          <li>
+            <a href="./landing.html">
+              <img src="./img/logo.png" alt="로고">
+            </a>
+          </li>
+          <li><a href="./price.html">멤버십</a></li>
+        </ul>
+      </div>
+      <div class="group-02">
+        <ul>
+          <li>
+            <p>이띵똥</p>
+            <img src="./img/arrow_down.png" alt="아래로">
+            <ul>
+              <li>
+                <a href="./membership_after.html">마이페이지</a>
+              </li>
+              <li>
+                <a href="./login.html">로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</form>
+
+<body>
+  <form name="mypage">
+    <section class="width information">
+      <h1>마이페이지</h1>
+      <div class="box mypage">
+        <p>회원 정보 수정</p>
+        <div class="member">
+          <ul>
+            <li>
+              <p>회원 닉네임</p>
+            </li>
+            <li>
+              <input type="text" placeholder="닉네임을 입력해주세요.">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>이메일 주소 </p>
+            </li>
+            <li>
+              <input type="text" placeholder="1234@gmailcom">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>비밀번호</p>
+            </li>
+            <li>
+              <a href="javascript:openPop()" class="btn-password btn-open">비밀번호 변경하기</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-list">
+          <button class="btn-completion disabled" data-btnacive="" type="button">수정완료</button>
+          <button class="btn-back disabled" type="button">취소</button>
+        </div>
+      </div>
+    </section>
+    <section class="width pay">
+      <div class="box">
+        <p>결제 등록</p>
+        <div class="pay-infomation">
+          <div class="cards-kind">
+            <p>개인</p>
+            <img src="./img/pay_card_after.png" alt="카드아이콘">
+            <span>unionpay</span>
+          </div>
+          <div class="cards-list-box">
+            <div class="num">
+              <ul>
+                <li>
+                  <p>카드번호</p>
+                </li>
+                <li>
+                  <p>1234 1234 **** 1234</p>
+                </li>
+              </ul>
+            </div>
+            <div class="term">
+              <ul>
+                <li>
+                  <p>유효기간</p>
+                </li>
+                <li>
+                  <p>06 / 23</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btn-list">
+          <button class="btn-completion active" type="button">재등록</button>
+          <button class="btn-back active" type="button">삭제</button>
+        </div>
+      </div>
+    </section>
+    <section class="width membership">
+      <div class="box">
+        <div class="plan-text">
+          <p>멤버십 구독</p>
+          <a class="plan" href="./price.html">
+            <p>기능 및 가격 알아보기</p>
+            <img src="./img/link.png" alt="기능_및_가격">
+          </a>
+        </div>
+        <div class="plan-information">
+          <div class="plan-kind">
+            <div class="plan-main">
+              <strong>Standard</strong>
+              <p>무료 체험판</p>
+            </div>
+            <div class="next-month">
+              <p>다음 달 <strong>02</strong>월 <strong>20</strong>일에 결제 됩니다.</p>
+            </div>
+          </div>
+          <div class="offer">
+            <ul>
+              <li>
+                <p class="group">옵션 판매량 분석</p>
+                <p>분석 슬롯 20개</p>
+              </li>
+              <li>
+                <p class="group">카테고리</p>
+                <p>랜덤 발굴 횟수 50회</p>
+                <p>발굴 카테고리 1,2차</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p class="group">상품 순위 분석</p>
+                <p>한 상품 당 키워드 200개</p>
+                <p>슬롯 40개</p>
+              </li>
+              <li>
+                <p class="group">히든 키워드</p>
+                <p>키워드 추출 개수 1000개</p>
+                <p>발굴 횟수 50회</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-list">
+          <button class="btn-completion active" type="button">플랜 변경하기</button>
+          <button class="btn-back active" type="button">구독취소</button>
+        </div>
+      </div>
+    </section>
+    <section class="width session">
+      <div class="box">
+        <p>세션 관리</p>
+        <div class="box-list">
+          <ul>
+            <li>
+              <p>필요한 경우 다른 세션을 모두 로그아웃 할 수 있습니다,<br>
+                계정 도용이 의심된다면 비밀번호도 함께 변경해주세요.</p>
+            </li>
+            <li>
+              <img src="./img/computer.png" alt="세션_아이콘">
+              <div class="now-session">
+                <ul>
+                  <li>
+                    <p>OS X - Chrome</p>
+                  </li>
+                  <li>
+                    <p>58.77.39.210,</p> <strong>현재 세션</strong>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="btn-ss-logout">다른 세션 모두 로그아웃</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </form>
+</body>
+<footer class="bg-color">
+  <div class="footer">
+    <!-- inner div 추가 -->
+    <div class="inner">
+      <div class="left">
+        <!-- color라는 클래스명 추가 // css는 style.css파일에서 스타일 적용 했습니다. -->
+        <div class="left-01 color">
+          <p>사업자등록번호: 605-86-36194</p>
+          <p>대표: 박수정</p>
+          <p>통신판매신고번호: 제 2022-서울금천-2606호</p>
+        </div>
+        <!-- color라는 클래스명 추가 -->
+        <div class="left-02 color">
+          <p>서울특별시 금천구 가산디지털2로 46, 3층 305호</p>
+          <p>etscorp2020@gmail.com</p>
+        </div>
+      </div>
+      <!-- color라는 클래스명 추가 -->
+      <div class="right color">
+        <p><a href="#">이용약관</a></p>
+        <p><a href="#">개인처리정보 방침</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

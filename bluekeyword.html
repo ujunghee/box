@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.png" />
+  <title>블루 키워드 분석</title>
+
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/sub.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- script -->
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/select.js"></script>
+</head>
+
+
+<form name="header">
+  <header>
+    <div class="header">
+      <div class="group-01">
+        <ul>
+          <li>
+            <a href="./landing.html">
+              <img src="./img/logo.png" alt="로고">
+            </a>
+          </li>
+          <li><a href="./price.html">멤버십</a></li>
+        </ul>
+      </div>
+      <div class="group-02">
+        <ul>
+          <li>
+            <p>이띵똥</p>
+            <img src="./img/arrow_down.png" alt="아래로">
+            <ul>
+              <li>
+                <a href="./mypage.html">마이페이지</a>
+              </li>
+              <li>
+                <a href="./login.html">로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</form>
+
+<body class="gray-color">
+  <div class="wrap">
+
+    <section class="allcontent">
+      
+      <!-- 네비게이션 사이드 바 -->
+      <div class="navigation-bar">
+        <nav class="nav" data-expanded="true">
+          <div class="nav__main">
+            <span class="nav__heading">
+              <span class="nav__heading-text">1단계 시장 분석</span>
+            </span>
+            <ul class="nav__items">
+              <li class="nav__item active">
+                <a class="nav__item-box" href="./bluekeyword.html" title="Dashboard">
+                  <!-- <span class="material-symbols-rounded">
+                search_check
+                </span> -->
+                  <span class="nav__item-text">블루키워드 분석</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-box" href="./hidden.html" title="Performance">
+                  <!-- <span class="material-symbols-rounded">
+                point_scan
+                </span> -->
+                  <span class="nav__item-text">히든키워드 발굴</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-box" href="#" title="Themes">
+                  <!-- <span class="nav__item-icon">
+                </svg>
+              </span> -->
+                  <span class="nav__item-text">쿠팡</span>
+                  <span class="icon-nav-roundeds"><img src="./img/arrow_down.png" alt=""></span>
+                </a>
+                <ul class="three-nav-02">
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="./coupang.html" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">top500</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="./coupang_02.html" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">연관검색어</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="./coupang_03.html" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">직접입력</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              </li>
+            </ul>
+            <span class="nav__heading">
+              <span class="nav__heading-text">2단계 제품 분석</span>
+            </span>
+            <ul class="nav__items">
+              <li class="nav__item">
+                <a class="nav__item-box" href="#" title="Guides">
+                  <!-- <span class="material-symbols-rounded">
+                wysiwyg
+                </span> -->
+                  <span class="nav__item-text">옵션판매량 분석</span>
+                  <span class="icon-nav-roundeds"><img src="./img/arrow_down.png" alt=""></span>
+                </a>
+                <ul class="three-nav">
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="#" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">쿠팡</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="#" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">네이버</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-box" href="#" title="Hotspots (28)">
+                  <!-- <span class="material-symbols-rounded">
+                pageview
+                </span> -->
+                  <span class="nav__item-text">리뷰데이터 분석 <strong class="nav__item-badge">28</strong></span>
+                </a>
+              </li>
+            </ul>
+            <span class="nav__heading">
+              <span class="nav__heading-text">3단계 편의 서비스</span>
+            </span>
+            <ul class="nav__items">
+              <li class="nav__item">
+                <a class="nav__item-box nav__item-box--red" href="#" title="Segments (24)">
+                  <!-- <span class="nav__item-icon nav__item-icon--badge">
+                <svg width="24px" height="24px" aria-hidden="true">
+                  <use xlink:href="#segments" />
+                </svg>
+              </span> -->
+                  <span class="nav__item-text">옵션판매량 분석<strong class="nav__item-badge">24</strong></span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-box" href="#" title="Themes">
+                  <!-- <span class="material-symbols-rounded">
+                anchor
+                </span> -->
+                  <span class="nav__item-text">아이엠바이어</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- 인풋 데이터 입력 바  -->
+      <div class="blue-keyword">
+        <div class="chk-bar">
+          <div class="chk-box">
+
+            <div class="type">
+              <p>상품타입</p>
+              <ul>
+                <li>
+                  <button class="btn-product active" type="button">전체</button>
+                </li>
+                <li>
+                  <button class="btn-product" type="button">국내</button>
+                </li>
+                <li>
+                  <button class="btn-product" type="button">해외</button>
+                </li>
+              </ul>
+            </div>
+            <div class="type"> 
+              <p>정렬기준</p>
+              <ul>
+                <li>
+                  <button class="btn-product active" type="button">7일 판매량순</button>
+                </li>
+                <li>
+                  <button class="btn-product" type="button">네이버 랭킹순</button>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="type">
+              <p>상품타입</p>
+              <div class="select-01 b100">
+                <button type="button" class="label">전체</button>
+                <ul class="optionList">
+                  <li class="optionItem">1</li>
+                  <li class="optionItem">2</li>
+                  <li class="optionItem">3</li>
+                  <li class="optionItem">4</li>
+                  <li class="optionItem">5</li>
+                  <li class="optionItem">6</li>
+                  <li class="optionItem">7</li>
+                </ul>
+              </div>
+            </div>
+            <div class="type">
+              <p>정렬기준</p>
+              <div class="select-01 b200">
+                <button type="button" class="label">전체</button>
+                <ul class="optionList">
+                  <li class="optionItem">1</li>
+                  <li class="optionItem">2</li>
+                  <li class="optionItem">3</li>
+                  <li class="optionItem">4</li>
+                  <li class="optionItem">5</li>
+                  <li class="optionItem">6</li>
+                  <li class="optionItem">7</li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+          <div class="search">
+            <div class="search-box">
+              <input type="text" class="search">
+              <button class="btn-send">분석하기</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 테이블 바 -->
+        <div class="table-box-wrap">
+          <div class="table-box">
+            <table>
+              <caption>헤더고정</caption>
+              <colgroup>
+                <col width="clac(100% / 10)">
+                <col width="clac(100% / 4)">
+                <col width="clac(100% / 12)">
+                <col width="clac(100% / 12)">
+                <col width="clac(100% / 12)">
+                <col width="clac(100% / 12)">
+                <col width="clac(100% / 12)">
+                <col width="clac(100% / 9)">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">판매건수<strong class="bold">100</strong>건 </th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+                <tr>
+                  <th scope="col">네이버랭킹</th>
+                  <th scope="col">제품명</th>
+                  <th scope="col">가격</th>
+                  <th scope="col">구분</th>
+                  <th scope="col">등록일</th>
+                  <th scope="col">최신판매건수(7일)</th>
+                  <th scope="col">평점</th>
+                  <th class="left-aglin" scope="col">카테고리</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>82</td>
+                  <td>
+                    <div class="img-text">
+                      <ul>
+                        <li>
+                          <p class="table-img"></p>
+                        </li>
+                        <li>
+                          <p class="skyblue-color">바비수산</p>
+                          <p>동해안 국내산 피데기 반건조오징어 5_5(10미)당일바리 마른오징어</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="red-color">16,900원</p>
+                  </td>
+                  <td>
+                    <p class="blue-badge">국내</p>
+                  </td>
+                  <td>2021.04.19</td>
+                  <td class="left-aglin">1027</td>
+                  <td>4.8</td>
+                  <td class="left-aglin">식품>수산물>건오징어>오징어>마른오징어</td>
+                </tr>
+                <tr>
+                  <td>82</td>
+                  <td>
+                    <div class="img-text">
+                      <ul>
+                        <li>
+                          <p class="table-img"></p>
+                        </li>
+                        <li>
+                          <p class="skyblue-color">바비수산</p>
+                          <p>동해안 국내산 피데기 반건조오징어 5_5(10미)당일바리 마른오징어</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="red-color">16,900원</p>
+                  </td>
+                  <td>
+                    <p class="blue-badge">국내</p>
+                  </td>
+                  <td>2021.04.19</td>
+                  <td class="left-aglin">1027</td>
+                  <td>4.8</td>
+                  <td class="left-aglin">식품>수산물>건오징어>오징어>마른오징어</td>
+                </tr>
+                <tr>
+                  <td>82</td>
+                  <td>
+                    <div class="img-text">
+                      <ul>
+                        <li>
+                          <p class="table-img"></p>
+                        </li>
+                        <li>
+                          <p class="skyblue-color">바비수산</p>
+                          <p>동해안 국내산 피데기 반건조오징어 5_5(10미)당일바리 마른오징어</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="red-color">16,900원</p>
+                  </td>
+                  <td>
+                    <p class="blue-badge">국내</p>
+                  </td>
+                  <td>2021.04.19</td>
+                  <td class="left-aglin">1027</td>
+                  <td>4.8</td>
+                  <td class="left-aglin">식품>수산물>건오징어>오징어>마른오징어</td>
+                </tr>
+                <tr>
+                  <td>82</td>
+                  <td>
+                    <div class="img-text">
+                      <ul>
+                        <li>
+                          <p class="table-img"></p>
+                        </li>
+                        <li>
+                          <p class="skyblue-color">바비수산</p>
+                          <p>동해안 국내산 피데기 반건조오징어 5_5(10미)당일바리 마른오징어</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="red-color">16,900원</p>
+                  </td>
+                  <td>
+                    <p class="blue-badge">국내</p>
+                  </td>
+                  <td>2021.04.19</td>
+                  <td class="left-aglin">1027</td>
+                  <td>4.8</td>
+                  <td class="left-aglin">식품>수산물>건오징어>오징어>마른오징어</td>
+                </tr>
+                <tr>
+                  <td>82</td>
+                  <td>
+                    <div class="img-text">
+                      <ul>
+                        <li>
+                          <p class="table-img"></p>
+                        </li>
+                        <li>
+                          <p class="skyblue-color">바비수산</p>
+                          <p>동해안 국내산 피데기 반건조오징어 5_5(10미)당일바리 마른오징어</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="red-color">16,900원</p>
+                  </td>
+                  <td>
+                    <p class="blue-badge">국내</p>
+                  </td>
+                  <td>2021.04.19</td>
+                  <td class="left-aglin">1027</td>
+                  <td>4.8</td>
+                  <td class="left-aglin">식품>수산물>건오징어>오징어>마른오징어</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+<!-- 로그인 후 사용하는 블루키워드, 쿠팡, 등의 페이지는 footer-02입니다 -->
+<footer class="bg-color">
+  <div class="footer-02">
+    <!-- inner div 추가 -->
+    <div class="left">
+      <!-- color라는 클래스명 추가 // css는 style.css파일에서 스타일 적용 했습니다. -->
+      <div class="left-01 color">
+        <p>사업자등록번호: 605-86-36194</p>
+        <p>대표: 박수정</p>
+        <p>통신판매신고번호: 제 2022-서울금천-2606호</p>
+      </div>
+      <!-- color라는 클래스명 추가 -->
+      <div class="left-02 color">
+        <p>서울특별시 금천구 가산디지털2로 46, 3층 305호</p>
+        <p>etscorp2020@gmail.com</p>
+      </div>
+    </div>
+    <!-- color라는 클래스명 추가 -->
+    <div class="right color">
+      <p><a href="#">이용약관</a></p>
+      <p><a href="#">개인처리정보 방침</a></p>
+    </div>
+  </div>
+</footer>
+
+</html>

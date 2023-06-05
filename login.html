@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.png" />
+  <title>로그인</title>
+
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/sub.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+
+  <!-- script -->
+  <script defer src="./js/script.js"></script>
+
+  <!-- scrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<!-- 고정헤더 -->
+<form name="header">
+  <header>
+    <div class="header">
+      <div class="group-01">
+        <ul>
+          <li>
+            <a href="./landing.html">
+              <img src="./img/logo.png" alt="로고">
+            </a>
+          </li>
+          <li><a href="./price.html">멤버십</a></li>
+        </ul>
+      </div>
+      <div class="group-02">
+        <ul>
+          <li><a href="./sign_up.html">회원가입</a></li>
+          <li class="btn-login"><a href="./login.html">로그인</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</form>
+
+<body class="hidden">
+  <section class="login">
+    <div class="plan-page">
+      <div class="video scroll-spy">
+        <video id="mov01" autoplay loop  muted="muted" src="./img/intro.mp4"></video>
+        <p class="text">
+          시장분석, 키워드분석, 경쟁사분석 등 <br>
+          소싱에 필요한 다양한 기능들을 <br>
+          무료로 사용하세요!
+        </p>
+      </div>
+    </div>
+    <form name="login">
+      <div class="login-page">
+        <div class="login-text">
+          <h1>로그인</h1>
+          <p>소싱부스트에 오신 것을 환영합니다.<br>
+            소싱부스트로 아이템 소싱을 편하게 해보세요.</p>
+        </div>
+        <div class="login-input">
+          <ul>
+            <li>
+              <p>이메일</p>
+              <input type="text" placeholder="1234@gmail.com">
+            </li>
+            <!-- 이메일 혹은 비밀번호 오류시 전환 -->
+            <!-- <li>
+              <p>이메일</p>
+              <input class="btn-error" type="text" placeholder="1234@gmail.com">
+              <p class="error-text">잘못된 이메일 입니다.</p>
+            </li> -->
+            <li>
+              <p>비밀번호</p>
+              <input type="password" placeholder="최소 8자 이상">
+            </li>
+            <li>
+              <div class="chk_more">
+                <ul>
+                  <li>
+                    <ul>
+                      <li>
+                        <div class="agree box-chk">
+                          <input type="checkbox" id="chBox1">
+                          <label for="chBox1">이메일 기억하기</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="agree box-chk">
+                          <input type="checkbox" id="chBox2">
+                          <label for="chBox2">자동 로그인</label>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="./password-email-send.html">비밀번호 찾기</a>
+                      </li>
+                      <li>
+                        <a href="./sign_up.html">회원가입</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class="btn-chk">
+            <a class="login-btn loading" href="./bluekeyword.html">로그인</a>
+          </div> -->
+          <div class="btn-chk">
+            <button type="button" class="button" onclick="this.classList.toggle('button--loading'); window.location = './bluekeyword.html'" >
+            <span class="button__text">로그인</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+</body>
+  <script>
+      document.getElementById('mov01').play();
+  </script>
+</html>
