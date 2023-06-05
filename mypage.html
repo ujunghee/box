@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.png" />
+  <title>마이페이지</title>
+
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/sub.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+
+  <!-- script -->
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/popup.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+
+<!-- 고정헤더 -->
+<form name="header">
+  <header>
+    <div class="header">
+      <div class="group-01">
+        <ul>
+          <li>
+            <a href="./landing.html">
+              <img src="./img/logo.png" alt="로고">
+            </a>
+          </li>
+          <li><a href="./price.html">멤버십</a></li>
+        </ul>
+      </div>
+      <div class="group-02">
+        <ul>
+          <li>
+            <p>이띵똥</p>
+            <img src="./img/arrow_down.png" alt="아래로">
+            <ul>
+              <li>
+                <a href="./mypage.html">마이페이지</a>
+              </li>
+              <li>
+                <a href="./login.html">로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</form>
+
+<body>
+  <!-- 비밀번호 변경 레이어팝업 -->
+  <div id="pop-info-1" class="pop-wrap">
+    <div class="password-layer">
+      <div class="title-text">
+        <p>비밀번호 변경하기</p>
+        <a href="#"><img class="img-close" src="./img/close_icon.png" alt="닫기버튼"></a>
+      </div>
+      <div class="password-input">
+        <ul>
+          <li>
+            <p>현재 비밀번호</p>
+          </li>
+          <li>
+            <input required="required" type="password" placeholder="현재 비밀번호 입력해주세요.">
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>새 비밀번호</p>
+          </li>
+          <li>
+            <input type="password" placeholder="영문, 숫자, 기호를 조합하여 8자 이상 사용해주세요.">
+          </li>
+        </ul>
+        </ul>
+        <ul>
+          <li>
+            <p>새 비밀번호 확인</p>
+          </li>
+          <li>
+            <input type="password" placeholder="다시 한번 입력해주세요.">
+          </li>
+        </ul>
+      </div>
+      <div class="btn-list">
+        <button onclick="alert('비밀번호가 변경되었습니다.');
+                window.location = './mypage.html'" class="btn-main" type="button">완료</button>
+        <button class="close" type="button">취소</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 카드 등록 팝업 -->
+  <div class="modal modal1">
+    <div class="dialog">
+      <div class="modal-header">
+        <div class="title">
+          <p>카드 등록하기</p>
+          <button type="button" class="close"><img src="./img/close_icon.png" alt="닫기"></button>
+        </div>
+      </div>
+      <div class="modal-content">
+        <div class="cards-information">
+          <ul>
+            <li>
+              <input type="radio" id="radio-individual1" name="radio-individual">
+              <label for="radio-individual1" class="btn-radio1">개인</label>
+              <!-- <button type="button" class="btn-click btn-num1">개인</button> -->
+            </li>
+            <li>
+              <input type="radio" id="radio-individual2" name="radio-individual">
+              <label for="radio-individual2" class="btn-radio2">법인</label>
+              <!-- <button type="button" class="btn-click btn-num2">법인</button> -->
+            </li>
+            <li>
+              <p class="sub-text">개인 or 법인 중 선택해주세요 :)</p>
+            </li>
+          </ul>
+          <div class="cards-content">
+            <div class="cards-text">
+              <div class="cards-num">
+                <ul>
+                  <li>
+                    <p class="info-text">카드번호</p>
+                  </li>
+                  <li>
+                    <input type="text" placeholder="0000">
+                    <p>-</p>
+                    <input type="password" placeholder="0000">
+                    <p>-</p>
+                    <input type="text" placeholder="0000">
+                    <p>-</p>
+                    <input type="text" placeholder="0000">
+                  </li>
+                </ul>
+              </div>
+              <div class="yearandmoth">
+                <ul>
+                  <li>
+                    <p class="info-text">유효기간</p>
+                  </li>
+                  <li>
+                    <input type="text" placeholder="Month / Year">
+                  </li>
+                </ul>
+                <ul class="info-indi">
+                  <li>
+                    <p class="info-text">생년월일</p>
+                  </li>
+                  <li>
+                    <input type="text" placeholder="주민번호 앞 6자리 숫자">
+                  </li>
+                </ul>
+                <ul class="info-entre change">
+                  <li>
+                    <p class="info-text">사업자번호</p>
+                  </li>
+                  <li>
+                    <input type="text" placeholder="사업자번호 10자리 숫자">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cards-password">
+            <ul>
+              <li>
+                <p class="info-text">카드 비밀번호</p>
+              </li>
+              <li>
+                <input class="card-pass" type="password" placeholder="비밀번호 앞 2자리 숫자">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn-main btn-modal" data-modal="modal2" type="button">등록하기</button>
+        <button class="close" type="button">취소</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 카드 등록 완료 -->
+  <div class="modal modal2">
+    <div class="dialog top-bottom">
+      <div class="modal-header">
+        <div class="title">
+          <p>카드 등록 완료</p>
+          <button type="button" class="close"><img src="./img/close_icon.png" alt="닫기"></button>
+        </div>
+        <p class="sub-title">이제 체험을 해볼까요?</p>
+      </div>
+      <div class="cards-com">
+        <div class="pay-infomation">
+          <div class="cards-kind">
+            <p>개인</p>
+            <img src="./img/pay_card_after.png" alt="카드아이콘">
+            <span>unionpay</span>
+          </div>
+          <div class="cards-list-box">
+            <div class="num">
+              <ul>
+                <li>
+                  <p>카드번호</p>
+                </li>
+                <li>
+                  <p>1234 1234 **** 1234</p>
+                </li>
+              </ul>
+            </div>
+            <div class="term">
+              <ul>
+                <li>
+                  <p>유효기간</p>
+                </li>
+                <li>
+                  <p>06 / 23</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button onclick="alert('카드 등록이 완료되었습니다.');
+        window.location = './card_completion.html'" class="btn-main" type="button">등록하기</button>
+        <button class="close" type="button">취소</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 회원 탈퇴 -->
+  <div class="modal modal3">
+    <div class="dialog-3 top-bottom">
+      <div class="modal-header">
+        <div class="title">
+          <p>회원 탈퇴</p>
+          <button type="button" class="close"><img src="./img/close_icon.png" alt="닫기"></button>
+        </div>
+      </div>
+      <div class="out-box">
+        <lottie-player src="https://lottie.host/5946e612-0526-4c2f-9995-7eee8df55e53/ElfFnrU01j.json"
+          background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <p class="out-text">회원 탈퇴하게 되면 당분간 저희를 못볼 수도 있어요</p>
+      <div class="buttons">
+        <button onclick="alert('그동안 사용해주셔서 감사합니다.');
+        window.location = './login.html'" class="btn-main" type="button">회원 탈퇴하기</button>
+        <button class="close" type="button">취소</button>
+      </div>
+    </div>
+  </div>
+  <!-- 마이페이지 -->
+  <form name="mypage">
+    <section class="width information">
+      <h1>마이페이지</h1>
+      <div class="box mypage">
+        <p>회원 정보 수정</p>
+        <div class="member">
+          <ul>
+            <li>
+              <p>회원 닉네임</p>
+            </li>
+            <li>
+              <input type="text" placeholder="닉네임을 입력해주세요.">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>이메일 주소 </p>
+            </li>
+            <li>
+              <input type="text" placeholder="1234@gmailcom">
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>비밀번호</p>
+            </li>
+            <li>
+              <a href="javascript:openPop()" class="btn-password btn-open">비밀번호 변경하기</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>수신 동의</p>
+            </li>
+            <li>
+              <div class="agree marketing">
+                <input type="checkbox" id="chBox">
+                <label for="chBox">마케팅 수신을 동의하시겠습니까?</label>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li></li>
+            <li><button type="button" class="btn-refusal btn-modal" data-modal="modal3">회원 탈퇴하기</button></li>
+          </ul>
+        </div>
+        <div class="btn-list">
+          <!-- btn-completion과 btn-back는 disabled 클래스명 제거시 활성화 됩니다.  -->
+          <button class="btn-completion disabled" data-btnacive="" type="button">수정완료</button>
+          <button class="btn-back disabled" type="button">취소</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 결제등록 -->
+    <section class="width pay">
+      <div class="box">
+        <p>결제 등록</p>
+        <span>결제 등록 도와드릴게요.</span>
+        <div class="card-box">
+          <img src="./img/pay_card.png" alt="카드_이미지">
+          <button type="button" class="btn-card btn-modal" data-modal="modal1">클릭하여 카드 등록하기</button>
+        </div>
+        <div class="kakako">
+          <strong>kakako pay</strong>
+          <button type="button" class="btn-kakako">카카오페이로 등록하기</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 멤버십 -->
+    <section class="width membership">
+      <div class="box">
+        <div class="plan-text">
+          <p>멤버십 구독</p>
+          <a class="plan" href="./price.html">
+            <p>기능 및 가격 알아보기</p>
+            <img src="./img/link.png" alt="기능_및_가격">
+          </a>
+        </div>
+        <span>아직 등록이 안되어 있어요.</span>
+        <div class="free-more">
+          <div class="free-text">
+            <p>멤버십 구독, 무료체험으로 시작하세요!</p>
+            <span>처음 이용하시는 분들을 위한 무료체험</span>
+          </div>
+          <a href="./membership.html">무료체험 바로가기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 세션관리 -->
+    <section class="width session">
+      <div class="box">
+        <p>세션 관리</p>
+        <div class="box-list">
+          <ul>
+            <li>
+              <p>필요한 경우 다른 세션을 모두 로그아웃 할 수 있습니다,<br>
+                계정 도용이 의심된다면 비밀번호도 함께 변경해주세요.</p>
+            </li>
+            <li>
+              <img src="./img/computer.png" alt="세션_아이콘">
+              <div class="now-session">
+                <ul>
+                  <li>
+                    <p>OS X - Chrome</p>
+                  </li>
+                  <li>
+                    <p>58.77.39.210,</p> <strong>현재 세션</strong>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button type="button" class="btn-ss-logout">다른 세션 모두 로그아웃</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </form>
+</body>
+
+<footer class="bg-color">
+  <div class="footer">
+    <!-- inner div 추가 -->
+    <div class="inner">
+      <div class="left">
+        <!-- color라는 클래스명 추가 // css는 style.css파일에서 스타일 적용 했습니다. -->
+        <div class="left-01 color">
+          <p>사업자등록번호: 605-86-36194</p>
+          <p>대표: 박수정</p>
+          <p>통신판매신고번호: 제 2022-서울금천-2606호</p>
+        </div>
+        <!-- color라는 클래스명 추가 -->
+        <div class="left-02 color">
+          <p>서울특별시 금천구 가산디지털2로 46, 3층 305호</p>
+          <p>etscorp2020@gmail.com</p>
+        </div>
+      </div>
+      <!-- color라는 클래스명 추가 -->
+      <div class="right color">
+        <p><a href="#">이용약관</a></p>
+        <p><a href="#">개인처리정보 방침</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

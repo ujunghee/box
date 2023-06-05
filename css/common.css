@@ -1,0 +1,726 @@
+a {
+  text-decoration: none;
+  color: initial;
+}
+p,
+span,
+a,
+div,
+strong,
+button,
+input,
+textarea {
+  font-family: Pretendard, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.gray-color {
+  background: rgb(242, 244, 247);
+}
+
+section {
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.65);
+  top: 0px;
+  z-index: 999;
+  backdrop-filter: blur(40px);
+  box-shadow: rgb(222, 227, 233) 0px 0px 8px 0px;
+}
+
+
+.certify input:disabled::placeholder {
+  color: rgb(48, 52, 55);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  padding: 10px 12px;
+  border: 1px solid rgb(222, 227, 233);
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  transition: all 0.2s ease 0s;
+  display: block;
+  box-sizing: border-box;
+}
+
+textarea {height: 90px;}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+  color: rgb(173, 180, 179);
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: rgb(5, 189, 185) solid 1px;
+  box-shadow: rgb(192, 219, 215) 0px 0px 6px 0px;
+}
+
+/* btn */
+.btn-free {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(45, 61, 61);
+  background: linear-gradient(90deg, rgb(198, 248, 245), rgb(249, 253, 254), rgb(239, 231, 254));
+  border: none;
+  border-radius: 14px;
+  padding: 20px 200px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-free:hover {
+  background: linear-gradient(90deg, rgb(173, 240, 235), rgb(226, 247, 253), rgb(224, 208, 253));
+}
+
+
+.btn-num1.active,
+.btn-num2.active {
+  font-size: 14px;
+  padding: 6px 16px;
+  background-color: rgb(243, 253, 252);
+  border: 1px solid rgb(5, 189, 185);
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.btn-num1,
+.btn-num2 {
+  font-size: 14px;
+  padding: 6px 16px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(192, 199, 198);
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+
+.cards-information .btn-radio {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 0px 0px 6px;
+  color: rgb(91, 100, 100);
+}
+
+.cards-information .btn-radio1::before {
+  content: "";
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.btn-radio1 {
+  margin-left: 10px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.btn-radio2 {
+  margin-left: 11px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.cards-information .btn-radio1::before {
+  content: "";
+  padding: 14px 24px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid rgb(221, 221, 221);
+  top: -1px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cards-information .btn-radio2::before {
+  content: "";
+  padding: 14px 24px;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid rgb(221, 221, 221);
+  top: 0px;
+  box-sizing: border-box;
+  left: 4px;
+  cursor: pointer;
+}
+
+.cards-information input:checked+.btn-radio1::before {
+  content: "";
+  padding: 14px 24px;
+  height: 10px;
+  border: 1px solid rgb(5, 189, 185);
+  top: -1px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cards-information input:checked+.btn-radio2::before {
+  content: "";
+  padding: 14px 24px;
+  height: 10px;
+  border: 1px solid rgb(5, 189, 185);
+  top: -1px;
+  left: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.login-btn {
+  padding: 16px 20px;
+  background-color: rgb(5, 189, 185);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: rgb(0, 174, 170);
+}
+
+
+.allbtn {
+  margin-top: 24px;
+  padding: 0px 15px;
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  padding: 13px 16px;
+  background: linear-gradient(45deg, rgb(64, 178, 226), rgb(5, 189, 185), rgb(27, 213, 225));
+  border: none;
+  outline: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.button:active {
+  background: #007a63;
+}
+
+.button__text {
+  font-size: 14px;
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.btn-replay {
+  padding: 11px 0px;
+  margin-right: 8px;
+  margin-left: 12px;
+  border: none;
+  color: rgb(6, 191, 211);
+  width: 40%;
+  background: inherit;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+
+.btn-replay:hover {
+  padding: 11px 0px;
+  margin-right: 8px;
+  background-color: rgb(238, 245, 246);
+  margin-left: 12px;
+  border: none;
+  color: rgb(6, 191, 211);
+  width: 40%;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.btn-product {
+  padding: 6px 14px;
+  border: 1px solid rgb(180, 180, 180);
+  color: rgb(180, 180, 180);
+  border-radius: 9px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+.btn-product:hover {
+  padding: 6px 14px;
+  border: 1px solid rgb(180, 180, 180);
+  color: rgb(180, 180, 180);
+  border-radius: 9px;
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+.btn-product.active {
+  padding: 6px 14px;
+  border: 1px solid rgb(5, 189, 185);
+  color: rgb(5, 189, 185);
+  border-radius: 9px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+.btn-product.active:hover {
+  background-color: rgb(244, 252, 252);
+}
+
+.btn-send {
+  padding: 8px 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 9px;
+  background-color: rgb(58, 62, 61);
+  margin-left: 12px;
+  width: 30%;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  padding: 8px 16px;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 9px;
+  background-color: rgb(29, 30, 28);
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.btn-90 {
+  padding: 11px 16px;
+  border: none;
+  color: #1C72E7;
+  border-radius: 9px;
+  background-color: #F1F6FF;
+  margin-left: 12px;
+  width: 31%;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.btn-90:hover {
+  padding: 11px 16px;
+  border: none;
+  color: #1C72E7;
+  border-radius: 9px;
+  background-color: #e3eaf8;
+  margin-left: 12px;
+  width: 31%;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.btn-50.disabled {
+  background-color: rgb(248, 247, 251);
+  padding: 6px 20px;
+  font-size: 13px;
+  border-radius: 9px;
+  border: none;
+  color: rgb(194, 183, 224);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-60.disabled {
+  background-color: rgb(255, 255, 255);
+  padding: 6px 20px;
+  border-radius: 9px;
+  border: 1px solid rgb(183, 201, 200);
+  color: rgb(183, 201, 200);
+  font-size: 13px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-50.active {
+  background-color: rgb(142, 102, 255);
+  border-radius: 9px;
+  width: 60px;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 6px 12px !important;
+}
+
+.btn-60 {
+  background-color: rgb(255, 255, 255);
+  padding: 6px 20px;
+  border-radius: 9px;
+  border: 1px solid rgb(5, 189, 185);
+  color: rgb(5, 189, 185);
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-50 {
+  background-color: rgb(246, 242, 255);
+  padding: 6px 20px;
+  border-radius: 9px;
+  border: none;
+  font-size: 13px;
+  color: rgb(98, 43, 255);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn-50.active:hover {
+  background-color: rgb(125, 81, 247);
+}
+
+.btn-50:hover {
+  background-color: rgb(235, 226, 255);
+}
+
+.btn-60:hover {
+  background-color: rgb(242, 255, 255);
+}
+
+
+.btn-70 {
+  border-radius: 9px;
+  border: 1px solid #DDDDDD;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #87919A;
+  background-color: #fff;
+}
+
+.btn-70:hover {
+  background-color: rgb(245, 245, 245);
+
+}
+
+
+.btn-shine {
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  margin: 0px auto;
+  transform: translate(523%, -50%);
+  padding: 12px 48px;
+  color: rgb(149, 153, 163);
+  writing-mode: vertical-lr;
+  animation: 3s linear 0s infinite normal forwards running shine;
+  text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0px center;
+  }
+
+  60% {
+    background-position: 180px center;
+  }
+
+  100% {
+    background-position: 180px center;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0px center;
+  }
+
+  60% {
+    background-position: 180px center;
+  }
+
+  100% {
+    background-position: 180px center;
+  }
+}
+
+
+.btn-certify {
+  padding: 10px 0px;
+  margin-right: 8px;
+  background: rgb(0, 201, 196);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-certify:hover,
+.btn-main:hover {
+  background: rgb(5, 189, 185);
+}
+
+.btn-login a:hover {
+  background: rgb(5, 189, 185);
+}
+
+.btn-password {
+  background: rgb(241, 241, 241);
+  border: none;
+  display: block;
+  width: 140px;
+  font-size: 14px;
+  padding: 12px 19px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-password:hover {
+  background: rgb(229, 229, 229);
+}
+
+.btn-completion {
+  padding: 10px 20px;
+  margin-right: 8px;
+  background: rgb(0, 201, 196);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-completion.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  padding: 10px 20px;
+  margin-right: 8px;
+  background: rgb(0, 201, 196);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.btn-signup {
+  width: 100%;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px;
+  background: linear-gradient(45deg, rgb(64, 178, 226), rgb(5, 189, 185), rgb(27, 213, 225));
+}
+
+.btn-signup:hover {
+  background: rgb(9, 176, 195);
+}
+
+.btn-completion:hover {
+  background: rgb(9, 176, 195);
+}
+
+.btn-back {
+  padding: 10px 20px;
+  background: rgb(241, 241, 241);
+  border: none;
+  color: rgb(45, 45, 45);
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-back.disabled {
+  background: rgb(241, 241, 241);
+  color: rgb(153, 153, 153);
+  cursor: not-allowed;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.btn-back.disabled:hover {
+  background: rgb(241, 241, 241);
+}
+
+.btn-back {
+  background: rgb(229, 229, 229);
+}
+
+.btn-main {
+  padding: 10px 20px;
+  margin-right: 8px;
+  background: rgb(0, 201, 196);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-main.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  padding: 10px 20px;
+  margin-right: 8px;
+  background: rgb(0, 201, 196);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.btn-back.disabled {
+  background: rgb(241, 241, 241);
+  color: rgb(153, 153, 153);
+  cursor: not-allowed;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.btn-error:focus {
+  outline: inherit !important;
+  box-shadow: rgb(219, 192, 192) 0px 0px 6px 0px !important;
+}
+
+.btn-error {
+  padding: 10px 20px;
+  margin-right: 8px;
+  background: rgb(255, 255, 255);
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 155, 155) !important;
+}
+
+.error-text {
+  margin-top: 8px;
+  color: rgb(255, 71, 71);
+  font-size: 12px !important;
+}
+
+.btn-refusal {
+  color: rgb(201, 209, 209);
+  font-weight: 400;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.close {
+  padding: 10px 20px;
+  background: rgb(241, 241, 241);
+  border: none;
+  color: rgb(45, 45, 45);
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.btn-card {
+  width: 100%;
+  padding: 41px 113px 41px 41px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  border: none;
+  box-sizing: border-box;
+  background: inherit;
+}
+
+.btn-kakako {
+  width: 100%;
+  padding: 24px 100px 24px 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(75, 51, 14);
+  border: none;
+  box-sizing: border-box;
+  background: inherit;
+}
+
+.btn-ss-logout {
+  padding: 10px 40px;
+  font-size: 14px;
+  color: rgb(45, 61, 61);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: rgb(241, 241, 241);
+}
+
+.btn-ss-logout:hover {
+  background: rgb(229, 229, 229);
+}

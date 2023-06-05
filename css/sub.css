@@ -1,0 +1,1053 @@
+.price-list {
+  margin-top: 188px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  color: rgb(45, 61, 61);
+  margin-bottom: 46px;
+}
+
+.price-list .price {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.price-list .price .price-box {
+  margin: 0px 4px;
+  padding: 58px 27px 27px;
+  box-sizing: border-box;
+  width: calc(33.3333%);
+}
+
+.price-list .price-box {
+  border: 1px solid rgb(214, 227, 227);
+  border-radius: 20px;
+}
+
+.price-list .price-box p:first-child {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.price-list .price .price-box .standard {
+  color: rgb(5, 189, 185);
+}
+
+.price-list .price .price-box .premium {
+  color: rgb(0, 153, 187);
+}
+
+.price-list .price .price-box .platinum {
+  color: rgb(0, 114, 192);
+}
+
+.price-list .price-box .sub-text {
+  font-size: 16px;
+  color: rgb(45, 61, 61);
+  font-weight: 400;
+  height: 30px;
+  line-height: 1.3;
+}
+
+.price-list .price-box .price-text {
+  margin-top: 60px;
+  margin-bottom: 12px;
+}
+
+.price-list .price-box .price-text p {
+  font-size: 30px;
+  color: rgb(45, 61, 61);
+  font-weight: 700;
+}
+
+.price-list .price-box .price-text strong {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 520%;
+  width: 170%;
+  background: #F4F8F7;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translateX(-90%) translateY(-20%) rotate(40deg);
+  transform: translateX(-90%) translateY(-20%) rotate(40deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-20%) rotate(30deg);
+  transform: translateX(-9%) translateY(-20%) rotate(30deg);
+  opacity: 1;
+}
+
+
+.price-list .price-box button {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  color: rgb(45, 61, 61);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.price-list .price-box ul li {
+  display: flex;
+  margin-top: 9px;
+  align-items: center;
+}
+
+.price-list .price-box ul li img {
+  width: 18px;
+  height: 18px;
+  padding: 0px 7px 0px 0px;
+}
+
+.price-list .price-box ul li p {
+  color: rgb(45, 61, 61);
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.price-list .keyword {
+  margin-top: 40px;
+}
+
+.price-list .keyword p {
+  padding: 13px;
+  border-radius: 10px;
+  background-color: rgb(229, 235, 235);
+  font-weight: 400 !important;
+  color: rgb(45, 61, 61) !important;
+  font-size: 15px !important;
+}
+
+.function-list {
+  margin-top: 132px;
+}
+
+.function-list .table-list {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.function-list .table-list table {
+  width: 100%;
+}
+
+.function-list .table-list table thead {
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(162, 176, 176);
+}
+
+.function-list .table-list table thead tr th {
+  text-align: left;
+  padding: 20px 0px;
+}
+
+.function-list .table-list table thead tr .num-01 {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.function-list .table-list table thead tr .num-02 {
+  font-weight: 800;
+  font-size: 20px;
+  color: rgb(5, 189, 185);
+}
+
+.function-list .table-list table thead tr .num-03 {
+  font-weight: 800;
+  font-size: 20px;
+  color: rgb(0, 153, 187);
+}
+
+.function-list .table-list table thead tr .num-04 {
+  font-weight: 800;
+  font-size: 20px;
+  color: rgb(0, 114, 192);
+}
+
+.function-list .table-list table tbody tr td {
+  padding: 13px 0px;
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.function-list .table-list table tbody tr td img {
+  display: block;
+  height: 18px;
+  width: 18px;
+}
+
+.function-list .table-list table tbody tr .sub-01 {
+  color: rgb(45, 61, 61);
+  font-size: 16px;
+  font-weight: 400;
+  width: calc(25%);
+  vertical-align: middle;
+}
+
+.function-list .table-list table tbody tr .sub-02 {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  width: calc(25%);
+  font-size: 16px;
+}
+
+.function-list .table-list table tfoot tr td {
+  margin-top: 24px;
+}
+
+.function-list .table-list table tfoot tr td .list-box {
+  margin: 0px 12px 0px 0px;
+}
+
+.function-list .table-list table tfoot tr td .list-box .title-0 {
+  font-weight: 700;
+  color: rgb(5, 189, 185);
+  margin-bottom: inherit;
+  font-size: 20px;
+  margin-top: 28px;
+}
+
+.function-list .table-list table tfoot tr td .list-box .title-1 {
+  font-weight: 700;
+  color: rgb(0, 153, 187);
+  margin-bottom: inherit;
+  font-size: 20px;
+}
+
+.function-list .table-list table tfoot tr td .list-box .title-2 {
+  font-weight: 700;
+  color: rgb(0, 114, 192);
+  margin-bottom: inherit;
+  font-size: 20px;
+}
+
+.function-list .table-list table tfoot tr td .list-box p {
+  color: rgb(143, 155, 154);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 10px;
+  height: 26px;
+}
+
+.function-list .table-list table tfoot tr td .list-box .amount p {
+  margin-top: 60px;
+  font-size: 30px;
+  color: rgb(45, 61, 61);
+  margin-bottom: 12px;
+  height: auto;
+  font-weight: 600;
+}
+
+.function-list .table-list table tfoot tr td .list-box .amount p strong {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.function-list .table-list table tfoot tr td .list-box button {
+  width: 100%;
+  padding: 12px 0px;
+  border: 1px solid rgb(217, 217, 217);
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.function-list .table-list table tfoot tr td .list-box button:hover {
+  background: #F4F8F7;
+  border: 1px solid rgb(220, 220, 220);
+  color: #2d2d2d;
+  ;
+}
+
+.faq {
+  margin: 132px 0 160px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.accordionTitle {
+  padding: 20px 20px 20px 0px;
+  position: relative;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: rgb(45, 45, 45);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.accordionTitle:hover {
+  padding-left: 8px;
+}
+
+.accordionTitle::before,
+.accordionTitle::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-radius: 50px;
+  transition: all 0.6s ease-in-out 0s;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordionTitle::before {
+  width: 100%;
+  background-color: rgb(225, 225, 225);
+}
+
+.accordionTitle:hover::after {
+  width: 100%;
+}
+
+.accordionTitleActive::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-radius: 50px;
+  transition: all 0.6s ease-in-out 0s;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accIcon {
+  float: right;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-top: -3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.accIcon::before,
+.accIcon::after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  background-color: rgb(45, 45, 45);
+  transition: all 0.4s ease 0s;
+}
+
+.accIcon::before {
+  width: 2px;
+  height: 14px;
+}
+
+.accIcon::after {
+  width: 14px;
+  height: 2px;
+}
+
+.accordionTitle:hover .accIcon::before,
+.accordionTitle:hover .accIcon::after {
+  background-color: rgb(45, 61, 61);
+}
+
+.accIcon.anime.accIcon::before {
+  transform: rotate(90deg);
+}
+
+.accordion .item .text {
+  opacity: 0;
+  height: 0px;
+  padding: 0px 20px;
+  position: relative;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1) 0s;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+}
+
+.accordion .item .text.show {
+  border-bottom: 1px solid rgb(225, 225, 225);
+  opacity: 1;
+  font-weight: 300;
+  height: auto;
+  padding: 25px 120px 20px 8px;
+  position: relative;
+  z-index: 0;
+  border-radius: 0px 0px 3px 3px;
+}
+
+/* 
+@media (min-width: 700px) and (max-width: 982px) {
+  .price-list {
+    margin-top: 188px;
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: rgb(45, 61, 61);
+    margin-bottom: 46px;
+  }
+
+  .price-list .price {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .price-list .price .price-box {
+    padding: 58px 27px 27px;
+    box-sizing: border-box;
+    width: 49%;
+    margin: 0 0 20px 0;
+  }
+
+  .price-list .price-box {
+    border: 1px solid rgb(214, 227, 227);
+    border-radius: 20px;
+  }
+
+  .price-list .price-box p:first-child {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+
+  .price-list .price .price-box .standard {
+    color: rgb(5, 189, 185);
+  }
+
+  .price-list .price .price-box .premium {
+    color: rgb(0, 153, 187);
+  }
+
+  .price-list .price .price-box .platinum {
+    color: rgb(0, 114, 192);
+  }
+
+  .price-list .price-box .sub-text {
+    font-size: 16px;
+    color: rgb(45, 61, 61);
+    font-weight: 400;
+    height: 30px;
+    line-height: 1.3;
+  }
+
+  .price-list .price-box .price-text {
+    margin-top: 60px;
+    margin-bottom: 12px;
+  }
+
+  .price-list .price-box .price-text p {
+    font-size: 40px;
+    color: rgb(45, 61, 61);
+    font-weight: 700;
+  }
+
+  .price-list .price-box .price-text strong {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+
+  .price-list .price-box button {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(45, 61, 61);
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+  }
+
+  .price-list .price-box ul li {
+    display: flex;
+    margin-top: 9px;
+    align-items: center;
+  }
+
+  .price-list .price-box ul li img {
+    width: 18px;
+    height: 18px;
+    padding: 0px 7px 0px 0px;
+  }
+
+  .price-list .price-box ul li p {
+    color: rgb(45, 61, 61);
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
+
+  .price-list .keyword {
+    margin-top: 40px;
+  }
+
+  .price-list .keyword p {
+    padding: 14px;
+    border-radius: 10px;
+    background-color: rgb(229, 235, 235);
+    font-weight: 400 !important;
+    color: rgb(45, 61, 61) !important;
+    font-size: 15px !important;
+  }
+
+  .function-list {
+    margin-top: 132px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .function-list .table-list {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .function-list .table-list table {
+    width: 100%;
+  }
+
+  .function-list .table-list table thead {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(162, 176, 176);
+  }
+
+  .function-list .table-list table thead tr th {
+    text-align: left;
+    padding: 20px 0px;
+  }
+
+  .function-list .table-list table thead tr .num-01 {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+  }
+
+  .function-list .table-list table thead tr .num-02 {
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(5, 189, 185);
+  }
+
+  .function-list .table-list table thead tr .num-03 {
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(0, 153, 187);
+  }
+
+  .function-list .table-list table thead tr .num-04 {
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(0, 114, 192);
+  }
+
+  .function-list .table-list table tbody tr td {
+    padding: 13px 0px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+  }
+
+  .function-list .table-list table tbody tr td img {
+    display: block;
+    height: 18px;
+    width: 18px;
+  }
+
+  .function-list .table-list table tbody tr .sub-01 {
+    color: rgb(45, 61, 61);
+    font-size: 16px;
+    font-weight: 400;
+    width: calc(25%);
+    vertical-align: middle;
+  }
+
+  .function-list .table-list table tbody tr .sub-02 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    width: calc(25%);
+    font-size: 16px;
+  }
+
+  .function-list .table-list table tfoot tr td {
+    margin-top: 24px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box {
+    margin: 0px 12px 0px 0px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .title-0 {
+    font-weight: 700;
+    color: rgb(5, 189, 185);
+    margin-bottom: inherit;
+    font-size: 20px;
+    margin-top: 28px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .title-1 {
+    font-weight: 700;
+    color: rgb(0, 153, 187);
+    margin-bottom: inherit;
+    font-size: 20px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .title-2 {
+    font-weight: 700;
+    color: rgb(0, 114, 192);
+    margin-bottom: inherit;
+    font-size: 20px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box p {
+    color: rgb(143, 155, 154);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 10px;
+    height: 26px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .amount p {
+    margin-top: 60px;
+    font-size: 30px;
+    color: rgb(45, 61, 61);
+    margin-bottom: 12px;
+    height: auto;
+    font-weight: 600;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .amount p strong {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box button {
+    width: 100%;
+    padding: 12px 0px;
+    border: 1px solid rgb(217, 217, 217);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box button:hover {
+    background: #F4F8F7;
+    border: 1px solid rgb(220, 220, 220);
+    color: #2d2d2d;
+    ;
+  }
+
+  .faq {
+    margin: 132px 0 160px 0;
+    padding: 0 16px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 760px) {
+  .price-list {
+    margin-top: 90px;
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(45, 61, 61);
+    margin-bottom: 26px;
+  }
+
+  .price-list .price {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .price-list .price .price-box {
+    padding: 38px 16px 14px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .price-list .price-box {
+    border: 1px solid rgb(214, 227, 227);
+    border-radius: 20px;
+  }
+
+  .price-list .price-box p:first-child {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 6px;
+  }
+
+  .price-list .price .price-box .standard {
+    color: rgb(5, 189, 185);
+  }
+
+  .price-list .price .price-box .premium {
+    color: rgb(0, 153, 187);
+  }
+
+  .price-list .price .price-box .platinum {
+    color: rgb(0, 114, 192);
+  }
+
+  .price-list .price-box .sub-text {
+    font-size: 16px;
+    color: rgb(45, 61, 61);
+    font-weight: 400;
+    height: 30px;
+    line-height: 1.3;
+  }
+
+  .price-list .price-box .price-text {
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  .price-list .price-box .price-text p {
+    font-size: 30px;
+    color: rgb(45, 61, 61);
+    font-weight: 700;
+  }
+
+  .price-list .price-box .price-text strong {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+  }
+
+  .price-list .price-box button {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: rgb(45, 61, 61);
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+  }
+
+  .price-list .price-box ul li {
+    display: flex;
+    margin-top: 9px;
+    align-items: center;
+  }
+
+  .price-list .price-box ul li img {
+    width: 18px;
+    height: 18px;
+    padding: 0px 7px 0px 0px;
+  }
+
+  .price-list .price-box ul li p {
+    color: rgb(45, 61, 61);
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
+
+  .price-list .keyword {
+    margin-top: 40px;
+  }
+
+  .price-list .keyword p {
+    padding: 14px;
+    border-radius: 10px;
+    background-color: rgb(229, 235, 235);
+    font-weight: 400 !important;
+    color: rgb(45, 61, 61) !important;
+    font-size: 13px !important;
+  }
+
+  .function-list {
+    margin-top: 70px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .function-list .table-list {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .function-list .table-list table {
+    width: 100%;
+  }
+
+  .function-list .table-list table thead {
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(162, 176, 176);
+  }
+
+  .function-list .table-list table thead tr th {
+    text-align: left;
+    padding: 20px 0px;
+  }
+
+  .function-list .table-list table thead tr .num-01 {
+    font-weight: 700;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+  }
+
+  .function-list .table-list table thead tr .num-02 {
+    font-weight: 800;
+    font-size: 17px;
+    color: rgb(5, 189, 185);
+  }
+
+  .function-list .table-list table thead tr .num-03 {
+    font-weight: 800;
+    font-size: 17px;
+    color: rgb(0, 153, 187);
+  }
+
+  .function-list .table-list table thead tr .num-04 {
+    font-weight: 800;
+    font-size: 17px;
+    color: rgb(0, 114, 192);
+  }
+
+  .function-list .table-list table tbody tr td {
+    padding: 13px 0px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+  }
+
+  .function-list .table-list table tbody tr td img {
+    display: block;
+    height: 16px;
+    width: 16px;
+  }
+
+  .function-list .table-list table tbody tr .sub-01 {
+    color: rgb(45, 61, 61);
+    font-size: 14px;
+    font-weight: 400;
+    width: calc(28%);
+    vertical-align: middle;
+  }
+
+  .function-list .table-list table tbody tr .sub-02 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    width: calc(25%);
+    font-size: 14px;
+  }
+
+  .function-list .table-list table tfoot tr td {
+    margin-top: 24px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box {
+    margin: 0px 12px 0px 0px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .title-0 {
+    font-weight: 700;
+    color: rgb(5, 189, 185);
+    margin-bottom: inherit;
+    font-size: 20px;
+    margin-top: 28px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .title-1 {
+    font-weight: 700;
+    color: rgb(0, 153, 187);
+    margin-bottom: inherit;
+    font-size: 20px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .title-2 {
+    font-weight: 700;
+    color: rgb(0, 114, 192);
+    margin-bottom: inherit;
+    font-size: 20px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box p {
+    color: rgb(143, 155, 154);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: 10px;
+    height: 26px;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .amount p {
+    margin-top: 60px;
+    font-size: 30px;
+    color: rgb(45, 61, 61);
+    margin-bottom: 12px;
+    height: auto;
+    font-weight: 600;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box .amount p strong {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box button {
+    width: 100%;
+    padding: 12px 0px;
+    border: 1px solid rgb(217, 217, 217);
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .function-list .table-list table tfoot tr td .list-box button:hover {
+    background: #F4F8F7;
+    border: 1px solid rgb(220, 220, 220);
+    color: #2d2d2d;
+    ;
+  }
+
+  .faq {
+    margin: 48px 0 60px 0;
+    padding: 0 16px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  .accIcon {
+    float: right;
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    right: 0;
+    position: absolute;
+    display: flex;
+    margin-top: -3px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accordionTitle {
+    padding: 18px 20px 20px 0px;
+    position: relative;
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: rgb(45, 45, 45);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+  }
+
+  .accordionTitle:hover {
+    padding-left: 0;
+  }
+
+  .accordion .item .text.show {
+    border-bottom: 1px solid rgb(225, 225, 225);
+    opacity: 1;
+    font-weight: 300;
+    height: auto;
+    padding: 15px 30px 20px 8px;
+    position: relative;
+    z-index: 0;
+    border-radius: 0px 0px 3px 3px;
+  }
+
+  .function-list .table-list table tfoot {
+    display: none;
+  }
+
+  .btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 520%;
+    width: 170%;
+    background: #F4F8F7;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    -webkit-transform: translateX(-90%) translateY(-20%) rotate(10deg);
+    transform: translateX(-90%) translateY(-20%) rotate(10deg);
+  }
+
+  .btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-20%) rotate(10deg);
+    transform: translateX(-9%) translateY(-20%) rotate(10deg);
+    opacity: 1;
+  }
+
+} */
+
+.arrow {
+  border-radius: 10px;
+  background: #05BDB9;
+  color: #fff;
+  margin: 0 auto;
+  display: inline;
+  position: fixed;
+  bottom: 3%;
+  padding: 20px 16px;
+  text-transform: uppercase;
+  right: 16px;
+  cursor: pointer;
+}
