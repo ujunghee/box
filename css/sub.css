@@ -3,7 +3,7 @@
 }
 
 .title {
-  font-size: 44px;
+  font-size: 34px;
   font-weight: 700;
   color: rgb(45, 61, 61);
   margin-bottom: 46px;
@@ -15,7 +15,7 @@
 }
 
 .price-list .price .price-box {
-  margin: 0px 8px;
+  margin: 0px 4px;
   padding: 58px 27px 27px;
   box-sizing: border-box;
   width: calc(33.3333%);
@@ -58,7 +58,7 @@
 }
 
 .price-list .price-box .price-text p {
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(45, 61, 61);
   font-weight: 700;
 }
@@ -143,7 +143,7 @@
 }
 
 .price-list .keyword p {
-  padding: 14px;
+  padding: 13px;
   border-radius: 10px;
   background-color: rgb(229, 235, 235);
   font-weight: 400 !important;
@@ -418,13 +418,6 @@ ul {
   z-index: 0;
   border-radius: 0px 0px 3px 3px;
 }
-
-.bg-color,
-.bg-color .footer {
-  background-color: #F6F8FA !important;
-}
-
-
 
 /* 
 @media (min-width: 700px) and (max-width: 982px) {
