@@ -18,50 +18,49 @@
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/sub.css" />
-  <link rel="stylesheet" href="./css/common.css" />
 
   <!-- script -->
   <script defer src="./js/script.js"></script>
   <script defer src="./js/popup.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
-
-<!-- 고정헤더 -->
-<form name="header">
-  <header>
-    <div class="header">
-      <div class="group-01">
-        <ul>
-          <li>
-            <a href="./landing.html">
-              <img src="./img/logo.png" alt="로고">
-            </a>
-          </li>
-          <li><a href="./price.html">멤버십</a></li>
-        </ul>
-      </div>
-      <div class="group-02">
-        <ul>
-          <li>
-            <p>이띵똥</p>
-            <img src="./img/arrow_down.png" alt="아래로">
-            <ul>
-              <li>
-                <a href="./mypage.html">마이페이지</a>
-              </li>
-              <li>
-                <a href="./login.html">로그아웃</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-</form>
-
 <body>
+
+  <!-- 고정헤더 -->
+  <form name="header">
+    <header>
+      <div class="header">
+        <div class="group-01">
+          <ul>
+            <li>
+              <a href="./landing.html">
+                <img src="./img/logo.png" alt="로고">
+              </a>
+            </li>
+            <li><a href="#">다운로드</a></li>
+            <li><a href="./price.html">멤버십</a></li>
+          </ul>
+        </div>
+        <div class="group-02">
+          <ul>
+            <li>
+              <p>이띵똥</p>
+              <img src="./img/arrow_down.png" alt="아래로">
+              <ul>
+                <li>
+                  <a href="./mypage.html">마이페이지</a>
+                </li>
+                <li>
+                  <a href="#">로그아웃</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </form>
+
   <!-- 비밀번호 변경 레이어팝업 -->
   <div id="pop-info-1" class="pop-wrap">
     <div class="password-layer">
@@ -118,13 +117,13 @@
         <div class="cards-information">
           <ul>
             <li>
-              <input type="radio" id="radio-individual1" name="radio-individual">
-              <label for="radio-individual1" class="btn-radio1">개인</label>
+              <input type="radio" id="radio-individual1" name="radio-individual"> 
+              <label for="radio-individual1" class="btn-radio1" >개인</label> 
               <!-- <button type="button" class="btn-click btn-num1">개인</button> -->
             </li>
             <li>
-              <input type="radio" id="radio-individual2" name="radio-individual">
-              <label for="radio-individual2" class="btn-radio2">법인</label>
+              <input type="radio" id="radio-individual2" name="radio-individual"> 
+              <label for="radio-individual2" class="btn-radio2" >법인</label> 
               <!-- <button type="button" class="btn-click btn-num2">법인</button> -->
             </li>
             <li>
@@ -245,27 +244,6 @@
     </div>
   </div>
 
-  <!-- 회원 탈퇴 -->
-  <div class="modal modal3">
-    <div class="dialog-3 top-bottom">
-      <div class="modal-header">
-        <div class="title">
-          <p>회원 탈퇴</p>
-          <button type="button" class="close"><img src="./img/close_icon.png" alt="닫기"></button>
-        </div>
-      </div>
-      <div class="out-box">
-        <lottie-player src="https://lottie.host/5946e612-0526-4c2f-9995-7eee8df55e53/ElfFnrU01j.json"
-          background="transparent" speed="1" loop autoplay></lottie-player>
-      </div>
-      <p class="out-text">회원 탈퇴하게 되면 당분간 저희를 못볼 수도 있어요</p>
-      <div class="buttons">
-        <button onclick="alert('그동안 사용해주셔서 감사합니다.');
-        window.location = './login.html'" class="btn-main" type="button">회원 탈퇴하기</button>
-        <button class="close" type="button">취소</button>
-      </div>
-    </div>
-  </div>
   <!-- 마이페이지 -->
   <form name="mypage">
     <section class="width information">
@@ -297,24 +275,8 @@
               <a href="javascript:openPop()" class="btn-password btn-open">비밀번호 변경하기</a>
             </li>
           </ul>
-          <ul>
-            <li>
-              <p>수신 동의</p>
-            </li>
-            <li>
-              <div class="agree marketing">
-                <input type="checkbox" id="chBox">
-                <label for="chBox">마케팅 수신을 동의하시겠습니까?</label>
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li></li>
-            <li><button type="button" class="btn-refusal btn-modal" data-modal="modal3">회원 탈퇴하기</button></li>
-          </ul>
         </div>
         <div class="btn-list">
-          <!-- btn-completion과 btn-back는 disabled 클래스명 제거시 활성화 됩니다.  -->
           <button class="btn-completion disabled" data-btnacive="" type="button">수정완료</button>
           <button class="btn-back disabled" type="button">취소</button>
         </div>
@@ -390,32 +352,31 @@
       </div>
     </section>
   </form>
-</body>
-
-<footer class="bg-color">
-  <div class="footer">
-    <!-- inner div 추가 -->
-    <div class="inner">
-      <div class="left">
-        <!-- color라는 클래스명 추가 // css는 style.css파일에서 스타일 적용 했습니다. -->
-        <div class="left-01 color">
-          <p>사업자등록번호: 605-86-36194</p>
-          <p>대표: 박수정</p>
-          <p>통신판매신고번호: 제 2022-서울금천-2606호</p>
+  <footer class="bg-color">
+    <div class="footer">
+      <!-- inner div 추가 -->
+      <div class="inner">
+        <div class="left">
+          <!-- color라는 클래스명 추가 // css는 style.css파일에서 스타일 적용 했습니다. -->
+          <div class="left-01 color">
+            <p>사업자등록번호: 605-86-36194</p>
+            <p>대표: 박수정</p>
+            <p>통신판매신고번호: 제 2022-서울금천-2606호</p>
+          </div>
+          <!-- color라는 클래스명 추가 -->
+          <div class="left-02 color">
+            <p>서울특별시 금천구 가산디지털2로 46, 3층 305호</p>
+            <p>etscorp2020@gmail.com</p>
+          </div>
         </div>
         <!-- color라는 클래스명 추가 -->
-        <div class="left-02 color">
-          <p>서울특별시 금천구 가산디지털2로 46, 3층 305호</p>
-          <p>etscorp2020@gmail.com</p>
+        <div class="right color">
+          <p><a href="#">이용약관</a></p>
+          <p><a href="#">개인처리정보 방침</a></p>
         </div>
       </div>
-      <!-- color라는 클래스명 추가 -->
-      <div class="right color">
-        <p><a href="#">이용약관</a></p>
-        <p><a href="#">개인처리정보 방침</a></p>
-      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</body>
 
 </html>
