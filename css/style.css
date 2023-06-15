@@ -751,7 +751,7 @@
   padding: 70px 16px;
   position: absolute;
   justify-content: space-between;
-  z-index: 99999;
+  z-index: 9999;
   color: rgb(114, 118, 120);
 }
 
@@ -2024,7 +2024,7 @@ form[name="login"] {
 }
 
 .codeput {
-  margin-top: 44px;
+  margin-top: 0;
   display: flex;
   position: relative;
   align-items: center;
@@ -2032,7 +2032,7 @@ form[name="login"] {
 
 .codeput span {
   position: absolute;
-  right: 8.5rem;
+  right: 9.5rem;
   font-size: 13px;
   font-weight: 400;
   color: rgb(184, 184, 184);
@@ -2040,6 +2040,7 @@ form[name="login"] {
 
 .codeput p {
   font-size: 14px;
+  margin-right: 12px;
   width: 37%;
   text-align: left;
 }
@@ -3365,4 +3366,59 @@ caption {
 
 .btn-chk {
   position: relative;
+}
+
+.essential {
+  display: flex;
+}
+.essential span {
+  margin-left: 6px;
+}
+.email-fiexd {
+  padding: 12px 0 !important;
+}
+
+.outbox-motion {
+  margin: 0px auto;
+  text-align: center;
+  width: 250px !important;
+  height: 180px !important;
+}
+
+.outbox-motion lottie-player {
+  margin: 0px auto 10px;
+  text-align: center;
+  width: 250px !important;
+  height: 180px !important;
+}
+
+
+.terms {
+  font-size: 13px;
+  color: rgb(6, 191, 211);
+  position: relative;
+  padding: 15px;
+  transition: all 0.4s ease 0s;
+}
+
+.terms:hover {
+  background-color: rgb(238, 245, 246);
+  border-radius: 8px;
+}
+
+.out-box-mypage {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 32px;
+  padding: 22px;
+}
+
+.id-email-fiexd {
+  padding: 12px 12px 12px;
+  border: 1px solid rgb(222, 227, 233);
+  border-radius: 10px;
+  font-size: 13px !important;
+  width: 100%;
+  margin-bottom: 0 !important;
+  background: #fafafa;
 }

@@ -267,8 +267,7 @@ textarea:focus {
 }
 
 .btn-replay {
-  padding: 11px 0px;
-  margin-right: 8px;
+  padding: 11px 12px;
   margin-left: 12px;
   border: none;
   color: rgb(6, 191, 211);
@@ -281,7 +280,7 @@ textarea:focus {
 }
 
 .btn-replay:hover {
-  padding: 11px 0px;
+  padding: 11px 8px;
   margin-right: 8px;
   background-color: rgb(238, 245, 246);
   margin-left: 12px;
@@ -516,6 +515,23 @@ textarea:focus {
   cursor: pointer;
 }
 
+.btn-certify.disabled {
+  padding: 10px 0px;
+  margin-right: 8px;
+  background: rgb(0, 201, 196);
+  border: none;
+  opacity: 0.6;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: not-allowed;
+}
+.btn-certify.disabled:hover {
+  opacity: 0.6;
+  background: rgb(0, 201, 196);
+}
+
+
 .btn-certify:hover,
 .btn-main:hover {
   background: rgb(5, 189, 185);
@@ -723,4 +739,34 @@ textarea:focus {
 
 .btn-ss-logout:hover {
   background: rgb(229, 229, 229);
+}
+
+.pop100 {
+  font-size: 13px;
+  padding: 12px;
+  box-sizing: border-box;
+  position: relative;
+  color: rgb(0 0 0);
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 0 auto 52px;
+}
+
+.pop100::before {
+  content: "";
+  display: block;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 50px;
+  position: absolute;
+  height: 1px;
+  background-color: #f4f4f4;
+}
+.btn-100 {
+    background: inherit;
+    padding: 12px 0;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #4a4a4a;
 }

@@ -38,7 +38,6 @@
               <img src="./img/logo.png" alt="로고">
             </a>
           </li>
-          <li><a href="./price.html">멤버십</a></li>
         </ul>
       </div>
       <div class="group-02">
@@ -239,7 +238,7 @@
       </div>
       <div class="buttons">
         <button onclick="alert('카드 등록이 완료되었습니다.');
-        window.location = './card_completion.html'" class="btn-main" type="button">등록하기</button>
+        // window.location = './card_completion.html'" class="btn-main" type="button">등록하기</button>
         <button class="close" type="button">취소</button>
       </div>
     </div>
@@ -260,8 +259,7 @@
       </div>
       <p class="out-text">잠시 저희와 떨어져 지내지만, 많이 그리울 거예요</p>
       <div class="buttons">
-        <button onclick="alert('그동안 사용해주셔서 감사합니다.');
-        window.location = './login.html'" class="btn-main" type="button">회원 탈퇴하기</button>
+        <button onclick="out();" class="btn-main" type="button">회원 탈퇴하기</button>
         <button class="close" type="button">취소</button>
       </div>
     </div>
@@ -286,7 +284,7 @@
               <p>이메일 주소 </p>
             </li>
             <li>
-              <input type="text" placeholder="1234@gmailcom">
+              <p class="email-fiexd">adcde@naver.com </p>
             </li>
           </ul>
           <ul>
@@ -417,5 +415,15 @@
     </div>
   </div>
 </footer>
+<script>
+  function out() {
+    if (!confirm("회원 탈퇴를 하시겠습니까?")) {
+        alert("저희와 함께 하시는건가요?");
+        window.location = './out-why.html'
+    } else {
+        alert("그동안 이용해주셔서 감사합니다.");
+        window.location = './login.html'
+    }
+  }</script>
 
 </html>

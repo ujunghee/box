@@ -72,9 +72,21 @@
             <span class="red-color">*</span>
           </p>
           <div class="certify">
-            <input type="text" placeholder="1234@naver.com">
-            <button class="btn-certify" onclick="alert('abcd@naver.com으로 인증 메일 보내드렸어요.'); window.location = './sign_up_two.html'">인증코드발송</button>
+            <p class="id-email-fiexd">adcd@naver.com</p>
+            <button class="btn-certify" onclick="email();">재입력</button>
           </div>
+        </li>
+        <li>
+          <p>인증코드 입력
+            <span class="red-color">*</span>
+          </p>
+          <div class="codeput">
+            <input class="btn-codeput" type="tel" id="code1" aria-label="1-6">
+            <label for="code1"></label>
+            <span class="timer">03:00</span>
+            <button onclick="alert('인증 완료되었습니다.');" class="btn-replay" type="button">인증 완료</button>
+          </div>
+          <button onclick="replay('다시 발송을 도와드릴까요?');" class="btn-100" type="button">인증코드가 안왔어요</button>
         </li>
         <!-- 이메일 인증 완료시 -->
         <!-- <li>
@@ -140,8 +152,24 @@
         </li>
       </ul>
     </div>
-    <div class="allbtn"> <button onclick="alert('필수 입력을 다 하지 않으셨어요.'); window.location = './sign_up.html'"
+    <div class="allbtn"> <button onclick="alert('소싱부스트에 회원 가입이 완료되었습니다.'); window.location = './bluekeyword.html'"
         class="btn-signup" type="button">회원가입</button></div>
   </section>
 </body>
+<script>
+  function replay() {
+    if (!confirm("다시 발송 도와드릴까요?")) {
+    } else {
+        alert("인증코드 다시 발송 드렸어요.");
+    }
+  }
+  
+  function email() {
+    if (!confirm("이메일 재입력 하시겠습니까?")) {
+        window.location = './sign_up_two.html'
+    } else {
+        window.location = './sign_up.html'
+    }
+  }
+  </script>
 </html>

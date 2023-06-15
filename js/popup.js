@@ -64,3 +64,4 @@ imgclose.addEventListener('click', function () {
   modal.classList.remove('popup-show');
   body.classList.remove('scrollLock');
 });
+
