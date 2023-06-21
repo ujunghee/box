@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.png" />
+  <title>멤버십 가입</title>
+
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/sub.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+
+  <!-- script -->
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/popup.js"></script>
+  <script defer src="./js/pay.js"></script>
+</head>
+
+
+<!-- 고정 헤더 -->
+<form name="header">
+  <header>
+    <div class="header">
+      <div class="group-01">
+        <ul>
+          <li>
+            <a href="./landing.html">
+              <img src="./img/logo.png" alt="로고">
+            </a>
+          </li>
+          <li><a href="./price.html">멤버십</a></li>
+        </ul>
+      </div>
+      <div class="group-02">
+        <ul>
+          <li>
+            <p>이띵똥</p>
+            <img src="./img/arrow_down.png" alt="아래로">
+            <ul>
+              <li>
+                <a href="./membership.html">마이페이지</a>
+              </li>
+              <li>
+                <a href="#">로그아웃</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</form>
+
+<body>
+  <!-- 카드 등록 팝업 -->
+  <div class="modal modal4">
+    <div class="dialog top-bottom">
+      <div class="modal-header">
+        <div class="title">
+          <p>결제카드</p>
+          <button type="button" class="close"><img src="./img/close_icon.png" alt="닫기"></button>
+        </div>
+      </div>
+      <div class="cards-com">
+        <div class="pay-infomation">
+          <div class="cards-kind">
+            <p>개인</p>
+            <img src="./img/pay_card_after.png" alt="카드아이콘">
+            <span>unionpay</span>
+          </div>
+          <div class="cards-list-box">
+            <div class="num">
+              <ul>
+                <li>
+                  <p>카드번호</p>
+                </li>
+                <li>
+                  <p>1234 1234 **** 1234</p>
+                </li>
+              </ul>
+            </div>
+            <div class="term">
+              <ul>
+                <li>
+                  <p>유효기간</p>
+                </li>
+                <li>
+                  <p>06 / 23</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn-main" onclick="alert('결제가 완료되었습니다.'); 
+                window.location = './membership_after.html'" type="button">결제하기
+        </button>
+        <button class="close" type="button">취소</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 멤버십 구독 -->
+  <form name="freepay">
+    <section class="width membership-pay">
+      <h1>멤버쉽구독</h1>
+      <h2>무료 서비스 종료 후 결제가 되며 이용하는 기간동안 언제든지 구독을 취소할
+        수 있습니다.</p>
+        <div class="pay-list">
+          <p class="user-mem">이띵똥님은 현재 <strong class="skyblue-color">Standard</strong>이에요.</p>
+          <div class="to-pay">
+            <div class="membership-to-pay">
+              <p>Standard</p>
+              <span>무료체험판</span>
+            </div>
+            <div class="more">
+              <a href="./price.html">자세히 알아보기</a>
+            </div>
+          </div>
+          <div class="paybox">
+            <div class="subscription">
+              <div class="muchbox">
+                <div class="much">
+                  <p>49,900원</p>
+                  <span>/ 1개월</span>
+                </div>
+                <span class="text">부가세포함</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="subscription">
+              <div class="muchbox">
+                <div class="much">
+                  <p>120,900원</p>
+                  <span>/ 3개월</span>
+                </div>
+                <span class="text">부가세포함</span>
+                <span class="text-02 red-color">16% 할인</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="function">
+          <ul>
+            <li>
+              <img src="./img/Check.png" alt="체크아이콘">
+              <p>발굴 횟수 최대 50회</p>
+            </li>
+            <li>
+              <img src="./img/Check.png" alt="체크아이콘">
+              <p>옵션 판매량 분석 슬롯 최대 20개</p>
+            </li>
+            <li>
+              <img src="./img/Check.png" alt="체크아이콘">
+              <p>히든 키워드 발굴 최대 50회</p>
+            </li>
+            <li>
+              <img src="./img/Check.png" alt="체크아이콘">
+              <p>상품 순위 분석 슬롯 최대 40개</p>
+            </li>
+            <li>
+              <img src="./img/Check.png" alt="체크아이콘">
+              <p>상품 순위 키워드 최대 200개</p>
+            </li>
+          </ul>
+        </div>
+        <div class="agree">
+          <input type="checkbox" id="chBox">
+          <label for="chBox">구독한 날짜로부터 14일 후 자동 결제 것에 동의 합니다.</label>
+        </div>
+        <button class="btn-modal btn-free" type="button" data-modal="modal4">무료체험 시작하기</button>
+    </section>
+  </form>
+</body>
+
+<!-- 풋터 -->
+<footer class="bg-color">
+  <div class="footer">
+    <!-- inner div 추가 -->
+    <div class="inner">
+      <div class="left">
+        <!-- color라는 클래스명 추가 // css는 style.css파일에서 스타일 적용 했습니다. -->
+        <div class="left-01 color">
+          <p>사업자등록번호: 605-86-36194</p>
+          <p>대표: 박수정</p>
+          <p>통신판매신고번호: 제 2022-서울금천-2606호</p>
+        </div>
+        <!-- color라는 클래스명 추가 -->
+        <div class="left-02 color">
+          <p>서울특별시 금천구 가산디지털2로 46, 3층 305호</p>
+          <p>etscorp2020@gmail.com</p>
+        </div>
+      </div>
+      <!-- color라는 클래스명 추가 -->
+      <div class="right color">
+        <p><a href="#">이용약관</a></p>
+        <p><a href="#">개인처리정보 방침</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

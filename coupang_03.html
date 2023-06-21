@@ -27,6 +27,7 @@
   <script defer src="./js/script.js"></script>
   <script defer src="./js/select.js"></script>
   <script defer src="./js/popup.js"></script>
+  <script defer src="./js/favorite.js"></script>
 </head>
 
 <form name="header">
@@ -77,7 +78,7 @@
           <p>원하는 항목을 선택해주세요.</p>
           <div class="agree choice">
             <input type="checkbox" id="chBox">
-            <label for="chBox"></label>
+            <label for="chBox">모두 선택</label>
           </div>
         </div>
         <div class="btn-list-box">
@@ -294,10 +295,7 @@
               </li>
               <li class="nav__item active">
                 <a class="nav__item-box" href="#" title="Themes">
-                  <!-- <span class="nav__item-icon">
-                </svg>
-              </span> -->
-                  <span class="nav__item-text">쿠팡</span>
+                  <span class="nav__item-text">쿠팡 분석</span>
                   <span class="icon-nav-roundeds"><img src="./img/arrow_down.png" alt=""></span>
                 </a>
                 <ul class="three-nav-02">
@@ -325,8 +323,39 @@
                       <span class="nav__item-text">직접입력</span>
                     </a>
                   </li>
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="./coupang_04.html" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">즐겨찾기</span>
+                    </a>
+                  </li>
                 </ul>
               </li>
+              <li class="nav__item">
+                <a class="nav__item-box" href="#" title="Performance">
+                  <span class="nav__item-text">AI 키워드</span>
+                  <span class="icon-nav-roundeds"><img src="./img/arrow_down.png" alt=""></span>
+                </a>
+                <ul class="three-nav-02">
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="./AI_01.html" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">AI 맞춤 키워드</span>
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-box threedaps" href="./AI_02.html" title="Guides">
+                      <!-- <span class="material-symbols-rounded">
+                    wysiwyg
+                    </span> -->
+                      <span class="nav__item-text">AI 즐겨찾기</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
             <span class="nav__heading">
@@ -416,6 +445,7 @@
         <div class="search">
           <div class="search-box">
             <button onclick="alert('입력값을 지우시겠습니까?')" ; class="btn-90">입력값 지우기</button>
+            <button class="btn-70 btn-modal" data-modal="modal5" type="button">보기옵션</button>
             <button class="btn-send">분석하기</button>
           </div>
         </div>
@@ -427,6 +457,7 @@
           <table>
             <thead>
               <tr>
+                <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -476,6 +507,7 @@
               </tr>
               <tr>
                 <th class="fiex" scope="col">순위</th>
+                <th class="fiex" scope="col">즐겨찾기</th>
                 <th class="fiex" scope="col">키워드</th>
                 <th class="fiex" scope="col">PC</th>
                 <th class="fiex" scope="col">모바일</th>
@@ -523,6 +555,7 @@
             <tbody>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -588,6 +621,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -653,6 +687,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -718,6 +753,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -783,6 +819,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -848,6 +885,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -913,6 +951,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -978,6 +1017,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>
@@ -1042,6 +1082,7 @@
               </tr>
               <tr>
                 <td class="fiex">1</td>
+                <td class="fiex favorite"><p></p></td>
                 <td class="fiex">영광굴비 오징어</td>
                 <td class="fiex">23,500</td>
                 <td class="fiex">46,400</td>

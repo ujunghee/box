@@ -109,17 +109,6 @@
 }
 
 
-.price-list .price-box button {
-  padding: 15px;
-  width: 100%;
-  border: 1px solid rgb(217, 217, 217);
-  border-radius: 10px;
-  background: rgb(255, 255, 255);
-  color: rgb(45, 61, 61);
-  transition: all 0.4s ease 0s;
-  cursor: pointer;
-}
-
 .price-list .price-box ul li {
   display: flex;
   margin-top: 9px;

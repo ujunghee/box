@@ -83,6 +83,7 @@ textarea:focus {
   border-radius: 14px;
   padding: 20px 200px;
   cursor: pointer;
+  width: 100%;
   text-align: center;
 }
 
@@ -211,8 +212,10 @@ textarea:focus {
 
 .allbtn {
   margin-top: 24px;
+  display: flex;
   padding: 0px 15px;
 }
+
 
 .button {
   position: relative;
@@ -354,7 +357,7 @@ textarea:focus {
   color: #1C72E7;
   border-radius: 9px;
   background-color: #F1F6FF;
-  margin-left: 12px;
+  margin-right: 12px;
   width: 31%;
   transition: all 0.4s ease 0s;
   cursor: pointer;
@@ -622,7 +625,7 @@ textarea:focus {
 }
 
 .btn-back {
-  background: rgb(229, 229, 229);
+  background: rgb(241 241 241);
 }
 
 .btn-main {
@@ -701,7 +704,6 @@ textarea:focus {
   justify-content: flex-end;
 }
 
-
 .btn-card {
   width: 100%;
   padding: 41px 113px 41px 41px;
@@ -769,4 +771,72 @@ textarea:focus {
     text-decoration: underline;
     cursor: pointer;
     color: #4a4a4a;
+}
+
+.btn-110 {
+  width: 100%;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px;
+  background: linear-gradient(45deg, rgb(64, 178, 226), rgb(5, 189, 185), rgb(27, 213, 225));
+}
+
+.btn-110:hover {
+  background: rgb(9, 176, 195);
+
+}
+
+.btn-120 {
+  width: 100%;
+  border: 1px solid rgb(0, 201, 196);
+  color: rgb(0, 201, 196);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 23px;
+  padding: 15px;
+  background: #fff;
+}
+
+.btn-120:hover {
+  background: rgb(243, 255, 255);
+
+}
+
+.btn-130 {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  color: rgb(45, 61, 61);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.btn-140 {
+  padding: 15px;
+  width: 100%;
+  border:none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgb(64, 178, 226), rgb(5, 189, 185), rgb(27, 213, 225));
+  color: #fff;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.btn-150 {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid rgb(9, 176, 195);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.btn span {
+  color: rgb(9, 176, 195);
+
 }

@@ -22,6 +22,8 @@
 
   <!-- script -->
   <script defer src="./js/script.js"></script>
+  <script defer src="./js/popup.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <form name="header">
@@ -57,12 +59,101 @@
 </form>
 
 <body>
+  <!-- 회원 탈퇴 팝업 -->
+  <div class="modal modal6">
+    <div class="dialog-4 top-bottom">
+      <div class="modal-header">
+        <div class="title">
+          <p>회원 탈퇴</p>
+          <button type="button" class="close"><img src="./img/close_icon.png" alt="닫기"></button>
+        </div>
+      </div>
+      <div class="membership-box">
+        <div class="plan-information">
+          <div class="plan-kind">
+            <div class="plan-main">
+              <strong>Standard</strong>
+            </div>
+          </div>
+          <div class="offer">
+            <ul>
+              <li>
+                <p class="group">옵션 판매량 분석</p>
+                <p>분석 슬롯 20개</p>
+              </li>
+              <li>
+                <p class="group">카테고리</p>
+                <p>랜덤 발굴 횟수 50회</p>
+                <p>발굴 카테고리 1,2차</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <p class="group">상품 순위 분석</p>
+                <p>한 상품 당 키워드 200개</p>
+                <p>슬롯 40개</p>
+              </li>
+              <li>
+                <p class="group">히든 키워드</p>
+                <p>키워드 추출 개수 1000개</p>
+                <p>발굴 횟수 50회</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="out-text-100">유료서비스를 사용하고 있어요. <br>
+        탈퇴하게 된다면 <strong>이용이나 환불이</strong> 불가능해요.</p>
+      <div class="buttons">
+        <button class="btn-main" data-modal="modal7" type="button">회원 탈퇴하기</button>
+        <button class="close" type="button">취소</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 회원 탈퇴 -->
+  <div class="modal modal7">
+    <div class="dialog-3 top-bottom">
+      <div class="modal-header">
+        <div class="title">
+          <p>회원 탈퇴</p>
+          <button type="button" class="close"><img src="./img/close_icon.png" alt="닫기"></button>
+        </div>
+      </div>
+      <div class="out-box">
+        <lottie-player src="https://lottie.host/5946e612-0526-4c2f-9995-7eee8df55e53/ElfFnrU01j.json"
+          background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+      <p class="out-text">잠시 저희와 떨어져 지내지만, 많이 그리울 거예요</p>
+      <div class="buttons">
+        <button onclick="out();" class="btn-main" type="button">회원 탈퇴하기</button>
+        <button class="close" type="button">취소</button>
+      </div>
+    </div>
+  </div>
+
   <form name="mypage">
     <section class="width information">
       <h1>마이페이지</h1>
       <div class="box mypage">
         <p>회원 정보 수정</p>
         <div class="member">
+          <ul>
+            <li>
+              <p>성함</p>
+            </li>
+            <li>
+              <p class="email-fiexd">이띵똥</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>이메일 주소 </p>
+            </li>
+            <li>
+              <p class="email-fiexd">adcde@naver.com </p>
+            </li>
+          </ul>
           <ul>
             <li>
               <p>회원 닉네임</p>
@@ -73,10 +164,12 @@
           </ul>
           <ul>
             <li>
-              <p>이메일 주소 </p>
+              <p>휴대폰 번호</p>
             </li>
-            <li>
-              <input type="text" placeholder="1234@gmailcom">
+            <li class="phone-num">
+              <input type="text" placeholder="010">
+              <input type="text" placeholder="1234">
+              <input type="text" placeholder="1234">
             </li>
           </ul>
           <ul>
@@ -87,13 +180,31 @@
               <a href="javascript:openPop()" class="btn-password btn-open">비밀번호 변경하기</a>
             </li>
           </ul>
+          <ul>
+            <li>
+              <p>수신 동의</p>
+            </li>
+            <li>
+              <div class="agree marketing">
+                <input type="checkbox" id="chBox">
+                <label for="chBox">마케팅 수신을 동의하시겠습니까?</label>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li></li>
+            <li><button type="button" class="btn-refusal btn-modal" data-modal="modal6">회원 탈퇴하기</button></li>
+          </ul>
         </div>
         <div class="btn-list">
+          <!-- btn-completion과 btn-back는 disabled 클래스명 제거시 활성화 됩니다.  -->
           <button class="btn-completion disabled" data-btnacive="" type="button">수정완료</button>
           <button class="btn-back disabled" type="button">취소</button>
         </div>
       </div>
     </section>
+
+
     <section class="width pay">
       <div class="box">
         <p>결제 등록</p>
@@ -239,5 +350,14 @@
     </div>
   </div>
 </footer>
-
+<script>
+  function out() {
+    if (!confirm("회원 탈퇴를 하시겠습니까?")) {
+        alert("저희와 함께 하시는건가요?");
+        window.location = './out-why.html'
+    } else {
+        alert("그동안 이용해주셔서 감사합니다.");
+        window.location = './out-why_two.html'
+    }
+  }</script>
 </html>
